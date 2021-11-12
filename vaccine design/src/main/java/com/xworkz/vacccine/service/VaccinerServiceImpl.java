@@ -33,10 +33,10 @@ public class VaccinerServiceImpl implements VaccinerService {
 		boolean result = this.vaccineDAO.saveVaccineDTO(vaccineEntity);
 		if (result) {
 			this.mailDispatcher.SendOTP(dto.getEmail(), "Vaccination Notification",
-					"Vaccination is succesfully done  ");
+					"Vaccine Registeration is succesfully done  ");
 			return true;
 		} else {
-			System.out.println("somethig went wrong try again");
+			System.out.println("Oops somethig went wrong,try again");
 		}
 		return false;
 	}

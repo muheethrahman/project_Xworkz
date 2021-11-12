@@ -37,7 +37,7 @@ public class VaccineController {
 	}
 
 	@RequestMapping(value = "/register.do")
-	public String onRegister(@Valid@ModelAttribute VaccineDTO dto, Model model)
+	public String onRegister(@ModelAttribute VaccineDTO dto, Model model)
 	{
 		LOGGER.log(Level.INFO,"Invoked onRegister Method");
 		//System.out.println("Invoked onRegister Method");

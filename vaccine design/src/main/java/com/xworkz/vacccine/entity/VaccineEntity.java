@@ -21,42 +21,42 @@ public class VaccineEntity {
 	@Column(name = "VACCINE_ID")
 	private int vaccineId;
 
-	@Size(min=3,message="required")  
+	//@Size(min=3,message="required")  
 	@Column(name = "VACCINE_NAME")
 	private String name;
-	@Size(min=8,message="required")  
+	//@Size(min=8,message="required")  
 	@Column(name = "VACCINE_EMAIL")
 	private String email;
 	
-	@Size(min=8,message="required")  
+	//@Size(min=8,message="required")  
 	@Column(name = "VACCINE_PASSWORD")
 	private String password;
 	
-	@Size(min=4,message="required")  
+	//@Size(min=4,message="required")  
 	@Column(name = "VACCINE_OPT")
 	private int otp;
 	
-	@Size(min=10,message="required")  
+	//@Size(min=10,message="required")  
 	@Column(name="VACCINE_ADDRESS")
 	private String address;
 	
-	@Size(min=10,max=10,message="required")  
+	//@Size(min=10,max=10,message="required")  
 	@Column(name="VACCINE_CONTACT")
 	private long contact;
 	
-	@Size(min=10,max=10,message="required")
+	//@Size(min=10,max=10,message="required")
 	@Column(name="VACCINE_AL_CONTACT")
 	private long alt_contact;
 	
-	@Size(min=4,max=12,message="required")
+	//@Size(min=4,max=12,message="required")
 	@Column(name="VACCINE_GENDER")
 	private String gender;
 	
-	@Size(message="required")
+	//@Size(message="required")
 	@Column(name="VACCINE_BDATE")
 	private String bdate;
 	
-	@Size(message="required")
+	//@Size(message="required")
 	@Column(name="VACCINE_PROOF")
 	private String proof;
 	

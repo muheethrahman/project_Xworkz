@@ -40,8 +40,8 @@
 	</bean>
 <bean class="org.springframework.mail.javamail.JavaMailSenderImpl"
 		id="JavaMailSenderImpl">
-		<property name="username" value="otpverify2020@gmail.com"></property>
-		<property name="password" value="otpverify@123"></property>
+		<property name="username" value="muheethrahman@gmail.com"></property>
+		<property name="password" value="sonusonu03"></property>
 		<property name="host" value="smtp.gmail.com"></property>
 		<property name="port" value="587"></property>
 		<property name="javaMailProperties">
