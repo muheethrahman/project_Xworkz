@@ -26,7 +26,7 @@ public class OtpController {
 	}
 
 	@RequestMapping(value = "/startotp.do")
-	public String getOtp(@RequestParam String email, Model model) {
+	public String getOtp(@RequestParam String email, Model model,HttpServletRequest req) {
 		LOGGER.log(Level.INFO,"invoked getOTP");
 		System.out.println("invoked getOTP");
 		otppNumber = OtpGenerator.randomNumberGenerator(1000, 9999);
@@ -35,6 +35,8 @@ public class OtpController {
 		LOGGER.log(Level.INFO,"OTP is generated");
 		//System.out.println("OTP is generated");
 		if(outcome) {
+			HttpSession session=req.openSession(true);
+			session.addAttribute("email",email);
 			return "home";
 		}else {
 			model.addAttribute("OtpSuccessMessage", "invalid email");
